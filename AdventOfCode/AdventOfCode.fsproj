@@ -1,15 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <OutputType>Exe</OutputType>
   </PropertyGroup>
 
   <ItemGroup>
     <Compile Include="TopologicalSort.fs" />
+    <Compile Include="Program.fs" />
     <None Include="Utils.fsx" />
     <None Include="Excercises2018.fsx" />
     <None Include="Excercises2019.fsx" />
     <None Include="Excercises2020.fsx" />
+    <None Include="paket.references" />
   </ItemGroup>
-
+  <Import Project="..\.paket\Paket.Restore.targets" />
 </Project>
